@@ -1,0 +1,41 @@
+body {
+    color: #dfdfdf;
+    background-color: rgb(22, 22, 22);
+}
+
+.green-banner {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.blue-banner {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.pink-banner {
+    background-color: rgb(218, 5, 218);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.grey-banner {
+    background-color: rgb(116, 182, 248);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.white-banner{
+    background-color: rgb(134, 134, 134);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+
+}
+

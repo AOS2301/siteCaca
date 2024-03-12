@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fase 2!</title>
+</head>
+<body>
+    <div id="banner"></div>
+    <script src="js/equipe.js"></script>
+    <input type="text" id="validar">
+    <h1 class="titulo">FASE 2</h1>
+    <input type="submit" value="Verificar" onclick="verificarResposta()">
+    <script>
+        function verificarResposta(){
+            var validar = document.getElementById("validar").value.trim().toUpperCase();
+            var team = new URLSearchParams(window.location.search).get("team");
+            if(validar == '211607379'){
+                window.location.href = "fase3.html?team=" + encodeURIComponent(team);
+            } else{
+                alert("Senha Incorreta!");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
