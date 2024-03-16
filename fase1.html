@@ -9,16 +9,35 @@
 <body>
     <div id="banner"></div>
     <script src="js/equipe.js"></script>
-    <input type="text" id="validar">
     <h1 class="titulo">FASE 1</h1>
-    <input type="submit" value="Verificar" onclick="verificarResposta()">
+    <p>OLá equipes, como vocês estão??<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pretium nulla, et facilisis dui. Cras ac est at eros accumsan viverra quis nec augue. Nulla vel maximus tortor. Integer sodales elit ac diam convallis viverra. Sed vulputate ac quam sed laoreet. Praesent fringilla pellentesque sem quis molestie. Nunc aliquet, augue a porta eleifend, mauris velit egestas leo, ac molestie mi risus non sem. Donec vitae sodales erat. Nulla lacus ante, vehicula consectetur libero ac, blandit efficitur diam. Nam at lacinia ipsum, vitae blandit tortor. Duis at diam ullamcorper, mollis lorem sit amet, efficitur magna. Phasellus faucibus sapien velit, sit amet efficitur ligula accumsan nec. Cras ultricies sit amet elit faucibus fringilla. Nam aliquet eu ipsum vel pellentesque. Aliquam aliquet ligula at turpis mattis vehicula. Cras commodo magna vel sodales laoreet.
+        <br><br>
+        Aenean lacinia dui et augue congue cursus. Pellentesque cursus nulla lacus, vel tempor tortor pellentesque sit amet. In feugiat, lorem ut porta pretium, lorem sem mollis libero, sit amet malesuada tellus sem at quam. Etiam nec venenatis libero. Fusce egestas pulvinar euismod. Suspendisse euismod venenatis dolor quis imperdiet. Donec a condimentum arcu. Integer ut metus vitae orci laoreet consectetur in quis libero. Nunc convallis feugiat lacinia. Sed ac rhoncus libero.
+        <br><br>
+        Vivamus sodales enim vitae lacus dignissim elementum. Phasellus vel nunc turpis. Integer eleifend ultricies lobortis. Phasellus facilisis ultrices diam, id auctor orci commodo sed. Cras euismod pretium convallis. Quisque convallis ligula a nibh consequat posuere. Proin scelerisque velit eros, malesuada aliquam turpis lacinia vitae. Etiam pretium blandit nulla, sed porttitor enim lobortis sed. Proin auctor ligula id mauris sollicitudin venenatis. Pellentesque sed tellus et orci aliquam ornare eget vitae nisi. Nam eget facilisis neque. Vestibulum tempus, odio sollicitudin scelerisque viverra, augue libero faucibus quam, sit amet iaculis leo odio sit amet massa. Curabitur eros dolor, tincidunt vel eros a, gravida imperdiet lacus. Vestibulum lectus est, convallis eget blandit ut, volutpat et orci.
+        <br><br>
+        Donec posuere quam ac justo ullamcorper accumsan. Duis eget nisi aliquam, faucibus nisl id, tristique quam. Proin pharetra sem ut ligula lobortis finibus. Aenean mattis, erat nec suscipit vestibulum, neque enim maximus sapien, et consectetur justo dolor gravida nulla. Sed sollicitudin auctor metus a consequat. Nunc vulputate turpis id elit dictum, tempor fermentum sem faucibus. Sed pretium vehicula elit vitae tempor. Donec ornare ipsum in libero bibendum tempus. Pellentesque lobortis lacus sed nisl sagittis, facilisis gravida risus luctus. Fusce sed arcu interdum, blandit nulla sit amet, auctor urna. Etiam eget fringilla erat.
+        <br><br>
+        Sed porttitor, tellus eget tincidunt commodo, mauris nulla pharetra massa, ut congue odio tellus ut ex. Mauris mattis ligula nec lectus fringilla, non porttitor enim sollicitudin. Aenean gravida ultricies felis, in tempor lectus pretium ullamcorper. Praesent tempus vehicula justo. Morbi consectetur dictum mattis. Pellentesque pellentesque pellentesque nisi nec scelerisque. Nullam et ultricies arcu. Vivamus in ipsum venenatis, vehicula est et, ultrices felis. Proin lacus dolor, tincidunt a lobortis in, tempor consequat elit. Duis ac sagittis sapien. Ut ultricies eget risus eu cursus. Morbi ac libero non risus dapibus dictum vitae vitae neque.</p>
+    <div class="informacao">
+        <input type="text" class="senha" id="validar">
+        <input type="submit" class="fase" value="Verificar" onclick="verificarResposta()">
+    </div>
     <script>
         function verificarResposta(){
             var validar = document.getElementById("validar").value.trim().toUpperCase();
             var team = new URLSearchParams(window.location.search).get("team");
-            if(validar == '211607379'){
+            if(validar == '211607379'/*Alterar o código dependendo da equipe*/ && team == "FLEMIS"){
                 window.location.href = "fase2.html?team=" + encodeURIComponent(team);
-            } else{
+            } else if(validar == '211607379' && team == "AA"){
+                window.location.href = "fase2.html?team=" + encodeURIComponent(team);
+            }else if(validar == '211607379' && team == "ECO"){
+                window.location.href = "fase2.html?team=" + encodeURIComponent(team);
+            }else if(validar == '211607379' && team == "IFRATELI"){
+                window.location.href = "fase2.html?team=" + encodeURIComponent(team);
+            }else if(validar == '211607379' && team == "LOTUS"){
+                window.location.href = "fase2.html?team=" + encodeURIComponent(team);
+            }else{
                 alert("Senha Incorreta!");
                 return;
             }

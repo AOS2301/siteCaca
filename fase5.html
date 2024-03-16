@@ -16,7 +16,15 @@
         function verificarResposta(){
             var validar = document.getElementById("validar").value.trim().toUpperCase();
             var team = new URLSearchParams(window.location.search).get("team");
-            if(validar == '211607379'){
+            if(validar == '211607379' && tema == "FLEMIS"){
+                window.location.href = "fase6.html?team=" + encodeURIComponent(team);
+            } else if(validar == '211607379' && team == "AA"){
+                window.location.href = "fase6.html?team=" + encodeURIComponent(team);
+            } else if(validar == '211607379' && team == "ECO"){
+                window.location.href = "fase6.html?team=" + encodeURIComponent(team);
+            } else if(validar == '211607379' && team == "IFRATELI"){
+                window.location.href = "fase6.html?team=" + encodeURIComponent(team);
+            } else if(validar == '211607379' && team == "LOTUS"){
                 window.location.href = "fase6.html?team=" + encodeURIComponent(team);
             } else{
                 alert("Senha Incorreta!");

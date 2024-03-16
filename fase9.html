@@ -16,7 +16,7 @@
         function verificarResposta(){
             var validar = document.getElementById("validar").value.trim().toUpperCase();
             var team = new URLSearchParams(window.location.search).get("team");
-            if(validar == '211607379'){
+            if(validar == 'Quase lá equipe...'){
                 window.location.href = "final.html?team=" + encodeURIComponent(team);
             } else{
                 alert("Senha Incorreta!");

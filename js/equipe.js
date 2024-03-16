@@ -4,6 +4,7 @@ var nomeEquipeDiv = document.getElementById("nomeEquipe");
 if (team === "FLEMIS") {
     bannerDiv.innerHTML = "<div class='green-banner'>Equipe Flemis</div>";
     nomeEquipeDiv.innerHTML = "Flemis 🍀";
+    botaoEinput.innerHTML = "<div class='informacao'> <input type='text' class='senha' id='validar'> <input type='submit' class='fase' value='Verificar' onclick='verificarResposta()' </div>";
 } else if (team === "IFRATELI") {
     bannerDiv.innerHTML = "<div class='grey-banner'>Equipe I-Frateli</div>";
     nomeEquipeDiv.innerHTML = "I-Frateli 🐇";
